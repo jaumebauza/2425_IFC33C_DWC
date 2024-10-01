@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 3.2
+        var b = 5.4
+
+        var pi = Math.PI  // valor del numero pi
+
+        // redondear
+        var c = Math.floor(a) // redondea hacia abajo (truncar)
+        var d = Math.floor(b)
+
+        console.log(a,c,b,d)
+
+        var e = Math.ceil(a) // redondea acia arriba
+        var f = Math.ceil(b)
+
+        console.log(a,e,b,f)
+
+        var g = Math.round(a) // redondeo natural
+        var h = Math.round(b)
+
+        console.log(a,g,b,h)
+
+        // para ver las operaciones de la libreria podemos Math
+
+        // numero aleatorio
+        var i = Math.random() // entre [o,1]
+        console.log(i)
+
+        //ejerciocio: obtener numero aleatorio enre [1,6]
+        var j = Math.random() * 6
+        var k = Math.random() * 6 +1
+        var l = Math.floor(Math.random()*6+1)
+
+        // ejerciocio: obtener un numero aleatorio entre [2,6]
+        var m = Math.random() * 5 //valores ente [0,5]
+        var n = Math.random() * (6-2+1) // valores entre [o,5)]
+        var o = Math.floor(Math.random() * (6-2+1)) // valores enteros entre [0,4]
+        var p = Math.floor(Math.random() * (6-2+1))+2 // valores enteros entre [0,6]
+
+        var max= 6
+        var min = 2
+        var formula = Math.floor(Math.random()*(max - min+1))+min
+
+        console.log(formula)
+
+    </script>
+</body>
+</html>
