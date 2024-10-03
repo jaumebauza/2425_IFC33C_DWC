@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cansoOriginal="Una mosca volava per la llum"
+
+        function subtituirVocals(canso,vocal){
+            return canso.replace(/[aeiou]/gi,vocal)
+        }
+
+        var cansoAmbA = subtituirVocals(cansoOriginal, 'a')
+        var cansoAmbE = subtituirVocals(cansoOriginal, 'e')
+        var cansoAmbI = subtituirVocals(cansoOriginal, 'i')
+        var cansoAmbO = subtituirVocals(cansoOriginal, 'o')
+        var cansoAmbU = subtituirVocals(cansoOriginal, 'u')
+
+        console.log(cansoAmbA);
+        console.log(cansoAmbE);
+        console.log(cansoAmbI);
+        console.log(cansoAmbO);
+        console.log(cansoAmbU);
+    </script>
+</body>
+</html>
