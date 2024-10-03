@@ -76,3 +76,49 @@ body {
     top: 0;
 }
 
+h1 {
+    
+    font-size: 48px;
+    color: #000;
+    font-family: 'Cursive', sans-serif;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #fff;
+}
+
+.search-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: darkred;
+}
+
+.result-box {
+    margin-top: 20px;
+}
+
+.result-box p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.result-box a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
