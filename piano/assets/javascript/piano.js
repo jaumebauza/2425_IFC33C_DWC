@@ -13,13 +13,13 @@ function Nota(nota, tipus=''){
 
 function AddCerca(nom,tipus=''){
     var nota = new Nota(nom,tipus)
-    cerca.push[nota.nota]
+    cerca.push(nota.nota)
 }
 
-function Cercador(mostra){
-    for (var i=0;i !== partitures.length;i++){
-        cerca.AddCerca[i]
-        i++
-    }
+function cercador() {
+    for (var i = 0; i < partitures.length; i++) {
+        var notesPartitura = partitures[i].notes;
+        var cercaTrobat = false;
+        }
+
 }
-var mostra=[DO,DO,RE]
