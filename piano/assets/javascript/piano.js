@@ -20,6 +20,25 @@ function cercador() {
     for (var i = 0; i < partitures.length; i++) {
         var notesPartitura = partitures[i].notes;
         var cercaTrobat = false;
-        }
+        for (var j = 0; j <= notesPartitura.length - cerca.length; j++) {
+            var trobat = true;
+            for (var k = 0; k < cerca.length; k++) {
+                if (notesPartitura[j + k] !== cerca[k]) {
+                    trobat = false;
+                    break;
+                }
+            }
+            if (trobat) {
+                console.log('Coincidencia trobada en: ' + partitures[i].nom);
+                cercaTrobat = true;
+                break;
+            }
 
+        }
+    }
 }
+
+AddCerca('DO')
+AddCerca('RE')
+
+cercador()
