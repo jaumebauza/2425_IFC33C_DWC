@@ -16,11 +16,18 @@ for (var i = 0; i < palos.length; i++) {
     }
 }
 
+function barajar(baraja){
+    return baraja.sort(
+        function(){
+            return Math.random() -0.5
+        }
+    )
+}
 
 function jugar(){
-    var barajaBarrejada = [...baraja].sort(() => 0.5 - Math.random())
 
-    var cartesSeleccionades = barajaBarrejada.slice(0, 5)
+
+    var cartesSeleccionades = barajar(baraja).slice(0, 5)
 
     var cartesDiv = document.getElementById('cartes')
     cartesDiv.innerHTML = ''
