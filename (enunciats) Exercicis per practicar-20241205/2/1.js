@@ -10,7 +10,7 @@ function crearLista(array, idContenedor) {
         const li = document.createElement('li')
         li.textContent = num
         ul.appendChild(li)
-    });
+    })
 
     contenedor.appendChild(ul)
 }
